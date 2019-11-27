@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\bin\Debug\LTTQ1.exe.config
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\bin\Debug\LTTQ1.exe
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\bin\Debug\LTTQ1.pdb
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.CapNhat.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Form1.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Properties.Resources.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Quanlydocgia.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Quanlymuontra.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Quanlytacgia.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.Timkiem.resources
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.exe
+C:\Users\Administrator\source\repos\LTTQ1\LTTQ1\obj\Debug\LTTQ1.pdb
