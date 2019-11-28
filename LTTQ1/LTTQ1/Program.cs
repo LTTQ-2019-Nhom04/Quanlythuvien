@@ -16,7 +16,7 @@ namespace LTTQ1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Timkiem());
+            Application.Run(new Form1());
         }
     }
 }

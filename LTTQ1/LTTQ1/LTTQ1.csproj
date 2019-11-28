@@ -99,6 +99,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Quanlydocgia.resx">
       <DependentUpon>Quanlydocgia.cs</DependentUpon>
@@ -124,6 +125,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

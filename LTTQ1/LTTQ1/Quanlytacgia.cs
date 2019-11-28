@@ -166,10 +166,14 @@ namespace LTTQ1
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult mess;
-            mess = MessageBox.Show("Bạn có muốn đóng chương trình", "Hỏi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (mess == DialogResult.OK)
-                Application.Exit();
+            this.Close();
+        }
+
+        private void Quanlytacgia_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dl = MessageBox.Show("Bạn có muốn đóng chương trình không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

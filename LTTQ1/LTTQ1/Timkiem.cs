@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,8 @@ namespace LTTQ1
         {
             InitializeComponent();
         }
-
+         String conSt = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QLTVS;Integrated Security=True";
+        
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if(btnTimKiem.Text=="Tìm Kiếm")
@@ -37,11 +39,37 @@ namespace LTTQ1
                         btnTimKiem.Text = "Thử lại";
                         if (radMasach.Checked == true)
                         {
-
+                            SqlConnection myConnection = new SqlConnection(conSt);
+                            String timkiem = txtTimSach.Text;
+                            String sql = String.Format("Select * from Sach where MaSach='{0}'", timkiem);
+                            SqlDataAdapter da = new SqlDataAdapter(sql, myConnection);
+                            DataTable dt = new DataTable();
+                            da.Fill(dt);
+                            foreach (DataRow drw in dt.Rows)
+                            {
+                                txtMaSach.Text = drw["MaSach"].ToString();
+                                txtTenSach.Text = drw["TenSach"].ToString();
+                                txtSoLuong.Text = drw["SoLuong"].ToString();
+                                txtMaTacGia.Text = drw["MaTG"].ToString();
+                                txtMaLoai.Text = drw["MaLoaiSach"].ToString();
+                            }
                         }
                         else if(radTensach.Checked==true)
                         {
-
+                            SqlConnection myConnection = new SqlConnection(conSt);
+                            String timkiem = txtTimSach.Text;
+                            String sql = String.Format("Select * from Sach where TenSach=N'{0}'", timkiem);
+                            SqlDataAdapter da = new SqlDataAdapter(sql, myConnection);
+                            DataTable dt = new DataTable();
+                            da.Fill(dt);
+                            foreach (DataRow drw in dt.Rows)
+                            {
+                                txtMaSach.Text = drw["MaSach"].ToString();
+                                txtTenSach.Text = drw["TenSach"].ToString();
+                                txtSoLuong.Text = drw["SoLuong"].ToString();
+                                txtMaTacGia.Text = drw["MaTG"].ToString();
+                                txtMaLoai.Text = drw["MaLoaiSach"].ToString();
+                            }
                         }
                     }
                 }

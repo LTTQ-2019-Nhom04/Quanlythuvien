@@ -30,7 +30,7 @@
         {
             this.grbChiTietDG = new System.Windows.Forms.GroupBox();
             this.dtNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grGioiTinh = new System.Windows.Forms.GroupBox();
             this.radNam = new System.Windows.Forms.RadioButton();
             this.radNu = new System.Windows.Forms.RadioButton();
             this.txtTenDG = new System.Windows.Forms.TextBox();
@@ -41,14 +41,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvDocGia = new System.Windows.Forms.DataGridView();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.dgvDocGia = new System.Windows.Forms.DataGridView();
             this.grbChiTietDG.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grGioiTinh.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             // grbChiTietDG
             // 
             this.grbChiTietDG.Controls.Add(this.dtNgayMuon);
-            this.grbChiTietDG.Controls.Add(this.groupBox2);
+            this.grbChiTietDG.Controls.Add(this.grGioiTinh);
             this.grbChiTietDG.Controls.Add(this.txtTenDG);
             this.grbChiTietDG.Controls.Add(this.label4);
             this.grbChiTietDG.Controls.Add(this.txtDiaChi);
@@ -84,19 +84,19 @@
             this.dtNgayMuon.Size = new System.Drawing.Size(284, 35);
             this.dtNgayMuon.TabIndex = 3;
             // 
-            // groupBox2
+            // grGioiTinh
             // 
-            this.groupBox2.Controls.Add(this.radNam);
-            this.groupBox2.Controls.Add(this.radNu);
-            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(483, 47);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(135, 143);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Giới Tính";
+            this.grGioiTinh.Controls.Add(this.radNam);
+            this.grGioiTinh.Controls.Add(this.radNu);
+            this.grGioiTinh.Font = new System.Drawing.Font("Times New Roman", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grGioiTinh.Location = new System.Drawing.Point(483, 47);
+            this.grGioiTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.grGioiTinh.Name = "grGioiTinh";
+            this.grGioiTinh.Padding = new System.Windows.Forms.Padding(4);
+            this.grGioiTinh.Size = new System.Drawing.Size(135, 143);
+            this.grGioiTinh.TabIndex = 2;
+            this.grGioiTinh.TabStop = false;
+            this.grGioiTinh.Text = "Giới Tính";
             // 
             // radNam
             // 
@@ -198,7 +198,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgvDocGia);
-            this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(10, 294);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
@@ -207,66 +207,6 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh Sách Độc Giả";
-            // 
-            // btnThem
-            // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(18, 220);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(183, 69);
-            this.btnThem.TabIndex = 13;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(240, 220);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(183, 69);
-            this.btnLuu.TabIndex = 14;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(454, 220);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(183, 69);
-            this.btnSua.TabIndex = 14;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(656, 220);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(183, 69);
-            this.btnXoa.TabIndex = 14;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(873, 220);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(183, 69);
-            this.btnThoat.TabIndex = 14;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // dgvDocGia
             // 
@@ -278,6 +218,77 @@
             this.dgvDocGia.RowTemplate.Height = 24;
             this.dgvDocGia.Size = new System.Drawing.Size(1028, 279);
             this.dgvDocGia.TabIndex = 0;
+            this.dgvDocGia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocGia_CellClick);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(18, 220);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(183, 69);
+            this.btnThem.TabIndex = 13;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(235, 220);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(183, 69);
+            this.btnLuu.TabIndex = 14;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(454, 220);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(183, 69);
+            this.btnSua.TabIndex = 14;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(663, 220);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(183, 69);
+            this.btnXoa.TabIndex = 14;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(873, 220);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(183, 69);
+            this.btnThoat.TabIndex = 14;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // Quanlydocgia
             // 
@@ -293,11 +304,14 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.grbChiTietDG);
             this.Name = "Quanlydocgia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quanlydocgia";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Quanlydocgia_FormClosing);
+            this.Load += new System.EventHandler(this.Quanlydocgia_Load);
             this.grbChiTietDG.ResumeLayout(false);
             this.grbChiTietDG.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grGioiTinh.ResumeLayout(false);
+            this.grGioiTinh.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).EndInit();
             this.ResumeLayout(false);
@@ -308,7 +322,7 @@
 
         private System.Windows.Forms.GroupBox grbChiTietDG;
         private System.Windows.Forms.DateTimePicker dtNgayMuon;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grGioiTinh;
         private System.Windows.Forms.RadioButton radNam;
         private System.Windows.Forms.RadioButton radNu;
         private System.Windows.Forms.TextBox txtTenDG;

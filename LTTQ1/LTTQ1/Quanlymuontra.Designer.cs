@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.btnChoMuon = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -46,6 +47,7 @@
             this.cbDocGia = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtMaSach1 = new System.Windows.Forms.TextBox();
             this.lbMaTG = new System.Windows.Forms.Label();
             this.labMaLoai = new System.Windows.Forms.Label();
             this.labSoLuong = new System.Windows.Forms.Label();
@@ -56,6 +58,8 @@
             this.cbMaSach = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblTinhTrangTraSach = new System.Windows.Forms.Label();
             this.btnTraSach = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTraSach = new System.Windows.Forms.DataGridView();
@@ -76,10 +80,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.lblTinhTrangTraSach = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtMaSach1 = new System.Windows.Forms.TextBox();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -120,26 +120,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý mượn";
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Location = new System.Drawing.Point(984, 63);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(151, 45);
+            this.btnLamMoi.TabIndex = 10;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // btnKetThuc
             // 
+            this.btnKetThuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnKetThuc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKetThuc.Location = new System.Drawing.Point(984, 211);
             this.btnKetThuc.Name = "btnKetThuc";
             this.btnKetThuc.Size = new System.Drawing.Size(151, 45);
             this.btnKetThuc.TabIndex = 9;
             this.btnKetThuc.Text = "Kết thúc";
-            this.btnKetThuc.UseVisualStyleBackColor = true;
+            this.btnKetThuc.UseVisualStyleBackColor = false;
             this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // btnChoMuon
             // 
+            this.btnChoMuon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnChoMuon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoMuon.Location = new System.Drawing.Point(984, 140);
             this.btnChoMuon.Name = "btnChoMuon";
             this.btnChoMuon.Size = new System.Drawing.Size(151, 45);
             this.btnChoMuon.TabIndex = 8;
             this.btnChoMuon.Text = "Cho Mượn";
-            this.btnChoMuon.UseVisualStyleBackColor = true;
+            this.btnChoMuon.UseVisualStyleBackColor = false;
             this.btnChoMuon.Click += new System.EventHandler(this.btnChoMuon_Click);
             // 
             // groupBox6
@@ -300,6 +314,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông Tin Sách";
             // 
+            // txtMaSach1
+            // 
+            this.txtMaSach1.Location = new System.Drawing.Point(205, 113);
+            this.txtMaSach1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaSach1.Name = "txtMaSach1";
+            this.txtMaSach1.Size = new System.Drawing.Size(240, 34);
+            this.txtMaSach1.TabIndex = 3;
+            // 
             // lbMaTG
             // 
             this.lbMaTG.BackColor = System.Drawing.Color.Gainsboro;
@@ -408,15 +430,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý trả";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(741, 248);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 26);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Trả sách";
+            // 
+            // lblTinhTrangTraSach
+            // 
+            this.lblTinhTrangTraSach.Location = new System.Drawing.Point(870, 248);
+            this.lblTinhTrangTraSach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTinhTrangTraSach.Name = "lblTinhTrangTraSach";
+            this.lblTinhTrangTraSach.Size = new System.Drawing.Size(233, 30);
+            this.lblTinhTrangTraSach.TabIndex = 20;
+            // 
             // btnTraSach
             // 
+            this.btnTraSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnTraSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraSach.Location = new System.Drawing.Point(121, 238);
+            this.btnTraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTraSach.Location = new System.Drawing.Point(95, 238);
             this.btnTraSach.Name = "btnTraSach";
-            this.btnTraSach.Size = new System.Drawing.Size(151, 45);
+            this.btnTraSach.Size = new System.Drawing.Size(177, 45);
             this.btnTraSach.TabIndex = 19;
             this.btnTraSach.Text = "Trả Sách";
-            this.btnTraSach.UseVisualStyleBackColor = true;
+            this.btnTraSach.UseVisualStyleBackColor = false;
             this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
             // 
             // groupBox2
@@ -615,63 +658,29 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(542, 239);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(151, 45);
+            this.btnThoat.Size = new System.Drawing.Size(178, 45);
             this.btnThoat.TabIndex = 8;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(340, 238);
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(319, 239);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(151, 45);
+            this.btnLuu.Size = new System.Drawing.Size(162, 45);
             this.btnLuu.TabIndex = 7;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // lblTinhTrangTraSach
-            // 
-            this.lblTinhTrangTraSach.Location = new System.Drawing.Point(870, 248);
-            this.lblTinhTrangTraSach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTinhTrangTraSach.Name = "lblTinhTrangTraSach";
-            this.lblTinhTrangTraSach.Size = new System.Drawing.Size(233, 30);
-            this.lblTinhTrangTraSach.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(741, 248);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 26);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Trả sách";
-            // 
-            // txtMaSach1
-            // 
-            this.txtMaSach1.Location = new System.Drawing.Point(205, 113);
-            this.txtMaSach1.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaSach1.Name = "txtMaSach1";
-            this.txtMaSach1.Size = new System.Drawing.Size(240, 34);
-            this.txtMaSach1.TabIndex = 3;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(984, 63);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(151, 45);
-            this.btnLamMoi.TabIndex = 10;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // Quanlymuontra
             // 
@@ -682,6 +691,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Quanlymuontra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quanlymuontra";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Quanlymuontra_FormClosing);
             this.Load += new System.EventHandler(this.Quanlymuontra_Load);

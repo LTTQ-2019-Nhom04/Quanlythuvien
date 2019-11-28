@@ -49,19 +49,22 @@ namespace LTTQ1
 
         private void cbMaSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*myDatabase db = new myDatabase();
-
-            String tensach = cbMaSach.SelectedValue.ToString();
-            String sql = String.Format("Select MaSach, MaLoai, SoLuong,MaTG from Sach where TenSach='{0}", tensach);
-            DataTable dt= db.getData(sql);
-
+             String conSt = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QLTVS;Integrated Security=True";
+             SqlConnection myConnection = new SqlConnection(conSt);
+            String masach = cbMaSach.SelectedValue.ToString();
+            String sql = String.Format("Select MaSach, MaLoaiSach, SoLuong, MaTG From Sach where MaSach=N'{0}'", masach);
+            SqlDataAdapter da = new SqlDataAdapter(sql, myConnection);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
             foreach (DataRow drw in dt.Rows)
             {
-                txtMaSach.Text = drw["MaSach"].ToString();
+                txtMaSach1.Text = drw["MaSach"].ToString();
                 labMaLoai.Text = drw["MaLoaiSach"].ToString();
                 labSoLuong.Text = drw["SoLuong"].ToString();
                 lbMaTG.Text = drw["MaTG"].ToString();
-            }*/
+            }
+
+           
         }
 
         private void Quanlymuontra_FormClosing(object sender, FormClosingEventArgs e)
@@ -82,10 +85,10 @@ namespace LTTQ1
             SqlConnection con = new SqlConnection(db.conSt);
             String madg = cbDocGia.SelectedValue.ToString();
             String masach = txtMaSach.Text;
-            String soluong = txtSoLuong.Text;
+            int soluong = Convert.ToInt32(txtSoLuong.Text);
             String ngaymuon = Convert.ToDateTime(dtMuon.Text).ToShortDateString();
             String ngayhentra = Convert.ToDateTime(dtTra.Text).ToShortDateString();
-            String sql = String.Format("Insert into MuonTraSach values('{0}','{1}','{2}','{3}','{4}')", madg, masach, soluong, ngaymuon, ngayhentra);
+            String sql = String.Format("Insert into  MuonTraSach(MaDG,MaSach,SoLuong,NgayMuon,NgayHenTra) values('{0}','{1}',{2},'{3}','{4}')", madg, masach, soluong, ngaymuon, ngayhentra);
             db.getData(sql);
             refreshDataGridView();
         }

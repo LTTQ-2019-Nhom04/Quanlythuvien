@@ -276,13 +276,14 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(749, 127);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(125, 55);
             this.btnThoat.TabIndex = 22;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // Timkiem
@@ -296,6 +297,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "Timkiem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Timkiem";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Timkiem_FormClosing);
             this.groupBox1.ResumeLayout(false);
